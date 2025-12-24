@@ -40,15 +40,20 @@ int main()
     cout << '\n';
 
     i = 0;
-    while (true) {
-        if (i == 10)
+    while (1) {
+        if (i >= 5)
             break;
         cout << i << " ";
         i++;
     }
     cout << '\n';
 
-///////////////////////// 1:46:00
+    i = 0;
+    while (i < sizeof(str) && str[i] != '\0') {
+        cout << str[i];
+        i++;
+    }
+    cout << '\n';
 
 
     return 0;
