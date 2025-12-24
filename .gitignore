@@ -14,19 +14,14 @@
 # Linker files
 *.ilk
 
-# Debugger Files
+# Debugger files
 *.pdb
+*.dwo
 
-# Compiled Dynamic libraries
+# Compiled Libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
 *.lai
 *.la
 *.a
@@ -36,6 +31,15 @@
 *.exe
 *.out
 *.app
+a.out
 
-# debug information files
-*.dwo
+# Build directories
+build/
+cmake-build-*/
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
