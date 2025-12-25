@@ -15,5 +15,12 @@ int main()
     cout << "b = " << *b << '\n';   // *b 의 값을 바꾸면
     cout << "a = " << a << '\n';    // a 의 값도 바뀜 (Call by addr)
 
+    cout << "sizeof(b) = " << sizeof(b) << '\n';
+    // 64 bit 환경에서는, 주소 하나 8 byte
+
+    char *text = "hello";
+    cout << *(text) << " " << *(text + 1) << " " << '\n';
+    cout << text[1] << '\n';
+
     return 0;
 }
